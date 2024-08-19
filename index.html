@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quack Sound</title>
+    <style>
+        /* Style the button */
+        #quackButton {
+            font-size: 24px; /* Make the text larger */
+            padding: 20px 40px; /* Increase the padding */
+            background-color: #ffeb3b; /* Yellow background */
+            color: #000; /* Black text color */
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer; /* Change cursor on hover */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+            transition: transform 0.2s; /* Animation effect */
+        }
+
+        /* Center the button */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        /* Add a hover effect */
+        #quackButton:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <button id="quackButton">Make Quack Sound</button>
+
+    <!-- Quack sound file -->
+    <audio id="quackSound" src="quack.mp3" preload="auto"></audio>
+
+    <script>
+        // Get the button and audio element
+        const quackButton = document.getElementById('quackButton');
+        const quackSound = document.getElementById('quackSound');
+
+        // Add an event listener to the button
+        quackButton.addEventListener('click', () => {
+            quackSound.play(); // Play the quack sound
+        });
+    </script>
+</body>
+</html>
