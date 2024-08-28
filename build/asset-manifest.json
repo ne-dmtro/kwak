@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kwak/static/css/main.bb6c0ea3.css",
+    "main.js": "/kwak/static/js/main.13ef8d91.js",
+    "static/media/pond.png": "/kwak/static/media/pond.047d63a6cf401ce0be4b.png",
+    "index.html": "/kwak/index.html",
+    "main.bb6c0ea3.css.map": "/kwak/static/css/main.bb6c0ea3.css.map",
+    "main.13ef8d91.js.map": "/kwak/static/js/main.13ef8d91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb6c0ea3.css",
+    "static/js/main.13ef8d91.js"
+  ]
+}
