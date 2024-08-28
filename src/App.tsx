@@ -9,7 +9,7 @@ function App() {
   const [searchParams] = useSearchParams();
   const quack = searchParams.get('quack');
 
-  const [sound, setSound] = useState(quack  || "🎶💋");
+  const [sound, setSound] = useState(quack  || "💩");
 
   const makeMusicMove = () => {
     const ducks = document.getElementsByClassName("duck__sound");
