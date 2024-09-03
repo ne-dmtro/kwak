@@ -7,9 +7,11 @@ import "./App.scss";
 
 function App() {
   const [searchParams] = useSearchParams();
-  const quack = searchParams.get('quack');
+  const quack = searchParams.get("quack");
 
-  const [sound, setSound] = useState(quack  || "💩");
+  const [sound, setSound] = useState(
+    quack ? quack.replaceAll("%20", " ") : "💩"
+  );
 
   const makeMusicMove = () => {
     const ducks = document.getElementsByClassName("duck__sound");
@@ -36,6 +38,7 @@ function App() {
 
     if (quackSound) {
       quackSound.play();
+
       makeMusicMove();
     }
   };
@@ -45,7 +48,7 @@ function App() {
       <header className="App-header"></header>
       <main>
         <div className="inputBox">
-          <label>
+          <label className="inputBox__label">
             Type the QUAK meaning here:
             <input
               type="text"

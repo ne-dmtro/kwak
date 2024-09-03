@@ -4,13 +4,18 @@
   appearance: none;
   position: relative;
   border-width: 0;
-  padding: 0 8px 12px;
-  width: 40px;
+  padding: 0 8px 13px;
+  width: 60px;
   border-radius: 50%;
   box-sizing: border-box;
   background: transparent;
   font: inherit;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    padding: 0 8px 12px;
+    width: 40px;
+  }
 }
 
 .button-top {
@@ -19,7 +24,7 @@
   justify-content: center;
   position: relative;
   z-index: 3;
-  padding: 8px 12px;
+  padding: 13px 12px;
   transform: translateY(0);
   text-align: center;
   color: #fff;
@@ -30,6 +35,10 @@
   user-select: none;
 
   border-radius: 50%;
+
+  @media (max-width: 700px) {
+    padding: 8px 10px;
+  }
 
   &::after {
     content: "";
@@ -57,9 +66,7 @@
 }
 
 .button:active .button-top::after {
-  border-radius: 6px;
   padding: 0 2px;
-
   border-radius: 50%;
 
 }
@@ -97,7 +104,6 @@
 }
 
 .button:active .button-bottom {
-  border-radius: 10px 10px 8px 8px / 8px;
   padding-top: 0;
 }
 
