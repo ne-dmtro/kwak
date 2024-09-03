@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { Button } from "./components/Button";
 import { DuckIcon } from "./components/icons";
 import pondImage from "./pond.png";
+import soundMusic from "./quack.mp3";
 import "./App.scss";
 
 function App() {
@@ -85,7 +86,7 @@ function App() {
             </div>
           </div>
 
-          <audio id="quackSound" src="quack.mp3" preload="auto"></audio>
+          <audio id="quackSound" src={soundMusic} preload="auto"></audio>
         </section>
       </main>
     </div>
